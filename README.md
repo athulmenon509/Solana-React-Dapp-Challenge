@@ -40,8 +40,3 @@ This project leverages the following technologies and libraries:
 
 ## Contributing
 Contributions are welcome! Report issues or enhance functionality by opening a pull request. Your input is valued.
-
-## License
-This project is licensed under [MIT License](LICENSE.md).
-
-Feel free to explore, contribute, and make the Solana blockchain integration even better!
