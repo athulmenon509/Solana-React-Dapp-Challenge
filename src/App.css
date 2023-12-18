@@ -1,38 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #2c3e50, #3498db); /* Updated gradient background */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: rgba(255, 255, 255, 0.2); /* Updated translucent background */
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 25%;
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(15px); /* Increased blur for glass morphism effect */
+  text-align: center;
+  font-size: calc(14px + 2vmin); /* Increased font size for better visibility */
+  color: #ecf0f1; /* Updated text color */
+}
+
+.button-container {
   display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 50%;
+  margin-top: 20px; /* Increased top margin for better spacing */
+  margin-left: 25%;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: rgba(255, 255, 255, 0.2); /* Updated translucent glass morphism effect background */
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(15px); /* Increased blur for glass morphism effect */
+  justify-self: center;
 }
 
-.App-link {
-  color: #61dafb;
+.custom-button {
+  background: rgba(255, 255, 255, 0.3); /* Updated translucent button color */
+  border: none;
+  border-radius: 25px; /* Increased border radius for a softer look */
+  padding: 15px 30px; /* Increased padding for better button size */
+  margin: 10px;
+  font-size: 18px; /* Increased font size for better visibility */
+  color: #ecf0f1; /* Updated text color */
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0); /* Initial box shadow for neon effect */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-button:hover {
+  background: #e74c3c; /* Updated neon light background color */
+  animation: neon-light 1s ease infinite; /* Neon light animation */
+  box-shadow: 0 0 25px rgba(255, 99, 71, 0.7); /* Increased glow effect on hover */
+  color: #ecf0f1; /* Updated text color on hover */
 }
